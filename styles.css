@@ -23,10 +23,71 @@ body {
   margin: 0;
   font-size: 1.5rem;
   font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white-paragraph);
 }
 
 h1,
 h2,
 h3 {
   font-family: "Big Shoulders Display", cursive;
+  margin: 3.5rem 0 2.5rem;
+  font-size: 2.3em;
+  color: var(--very-lightGrey);
+}
+
+/* button */
+.btn {
+  background: var(--very-lightGrey);
+  border-radius: 30px;
+  padding: 1.5rem 1rem;
+  width: 14.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 2.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid var(--very-lightGrey);
+  color: var(--very-lightGrey);
+}
+
+.btn--darkcyan {
+  color: var(--primary-Dark-cyan);
+}
+
+.btn--orange {
+  color: var(--primary-Bright-orange);
+}
+.btn--veryDarkcyan {
+  color: var(--primary-VeryDark-cyan);
+}
+
+/* card */
+
+.card {
+  border-radius: 8px;
+  width: 327px;
+  padding: 5rem;
+  margin: 5rem;
+}
+
+.card--darkcyan {
+  background: var(--primary-Dark-cyan);
+}
+
+.card--orange {
+  background: var(--primary-Bright-orange);
+}
+
+.card--veryDarkcyan {
+  background: var(--primary-VeryDark-cyan);
+}
+
+@media screen and (min-width: 678px) {
+  .btn {
+    margin-top: 8rem;
+  }
 }
