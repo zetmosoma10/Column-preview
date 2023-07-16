@@ -1,0 +1,32 @@
+:root {
+  --primary-Bright-orange: hsl(31, 77%, 52%);
+  --primary-Dark-cyan: hsl(184, 100%, 22%);
+  --primary-VeryDark-cyan: hsl(179, 100%, 13%);
+  /* Nuetral */
+  --transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --very-lightGrey: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+}
