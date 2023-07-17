@@ -16,14 +16,19 @@ html {
 *::after {
   box-sizing: border-box;
 }
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif; */
 
 body {
   margin: 0;
   font-size: 1.5rem;
   font-family: "Lexend Deca", sans-serif;
   color: var(--transparent-white-paragraph);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 h1,
@@ -48,10 +53,12 @@ h3 {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background: transparent;
   border: 2px solid var(--very-lightGrey);
   color: var(--very-lightGrey);
+  outline: none;
 }
 
 .btn--darkcyan {
@@ -65,13 +72,17 @@ h3 {
   color: var(--primary-VeryDark-cyan);
 }
 
+@media screen and (min-width: 678px) {
+  .btn {
+    margin-top: 8rem;
+  }
+}
+
 /* card */
 
 .card {
-  border-radius: 8px;
   width: 327px;
   padding: 5rem;
-  margin: 5rem;
 }
 
 .card--darkcyan {
@@ -86,8 +97,17 @@ h3 {
   background: var(--primary-VeryDark-cyan);
 }
 
+/* Grid */
+.grid {
+  display: grid;
+}
+
 @media screen and (min-width: 678px) {
-  .btn {
-    margin-top: 8rem;
+  .grid-1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    height: 500px;
   }
 }
